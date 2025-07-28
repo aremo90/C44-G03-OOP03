@@ -4,14 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Demo
+namespace Demo.Q1
 {
-    internal enum SecurityLevel
+    internal enum Gender
     {
-        Guest,
-        Developer,
-        Secretary,
-        DBA
+        Male = 0,
+        Female = 1,
+        M = 0,
+        F = 1
     }
-
 }

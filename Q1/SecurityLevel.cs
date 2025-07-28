@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Demo
+namespace Demo.Q1
 {
-    internal enum Role
+    internal enum SecurityLevel
     {
-        DBA,
         Guest,
-        SecurityOfficer
+        Developer,
+        Secretary,
+        DBA
     }
+
 }

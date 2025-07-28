@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Demo
+namespace Demo.Q5
 {
-    internal enum Gender
+    internal class PrintedBook : Book
     {
-        Male = 0,
-        Female = 1,
-        M = 0,
-        F = 1
+        #region
+
+        public int PageCount { get; set; }
+
+        #endregion
     }
 }

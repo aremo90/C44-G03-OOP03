@@ -4,14 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Demo
+namespace Demo.Q3
 {
-    internal class PrintedBook : Book
+    internal enum Role
     {
-        #region
-
-        public int PageCount { get; set; }
-
-        #endregion
+        DBA,
+        Guest,
+        SecurityOfficer
     }
 }

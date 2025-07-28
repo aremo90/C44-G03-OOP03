@@ -1,5 +1,11 @@
 ﻿using System.Data;
 
+using Demo.Q1;
+using Demo.Q2;
+using Demo.Q3;
+using Demo.Q5;
+
+
 namespace Demo
 {
     internal class Program
@@ -85,7 +91,6 @@ namespace Demo
             #region Q4
 
             #endregion
-
             #region Q5
             /*
              * 01.
