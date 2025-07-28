@@ -1,4 +1,6 @@
-﻿namespace Demo
+﻿using System.Data;
+
+namespace Demo
 {
     internal class Program
     {
@@ -50,18 +52,34 @@
             #endregion
 
             #region Q2
-            Console.Write("Enter Day: ");
-            int day = int.Parse(Console.ReadLine());
+            //Console.Write("Enter Day: ");
+            //int day = int.Parse(Console.ReadLine());
 
-            Console.Write("Enter Month: ");
-            int month = int.Parse(Console.ReadLine());
+            //Console.Write("Enter Month: ");
+            //int month = int.Parse(Console.ReadLine());
 
-            Console.Write("Enter Year: ");
-            int year = int.Parse(Console.ReadLine());
+            //Console.Write("Enter Year: ");
+            //int year = int.Parse(Console.ReadLine());
 
-            HireDate hiringDate = new HireDate(day, month, year);
+            //HireDate hiringDate = new HireDate(day, month, year);
 
-            Console.WriteLine("Hiring Date: " + hiringDate);
+            //Console.WriteLine("Hiring Date: " + hiringDate);
+
+
+            #endregion
+            #region Q3
+            Employee02 Emp01 = new Employee02(1, "Ali", Role.DBA, Permission.Read | Permission.Write);
+            Employee02 Emp02 = new Employee02(2, "Sara", Role.Guest, Permission.Read);
+            Employee02 Emp03 = new Employee02(3, "Omar", Role.SecurityOfficer, Permission.Execute);
+
+            Console.WriteLine("Employee List:");
+            Console.WriteLine("=======================");
+            Emp01.Display();
+            Console.WriteLine("=======================");
+            Emp02.Display();
+            Console.WriteLine("=======================");
+            Emp03.Display();
+            Console.WriteLine("=======================");
 
 
             #endregion
