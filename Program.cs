@@ -38,6 +38,43 @@
             //Console.WriteLine(c3);
 
             #endregion
+
+
+            #region Inheritance
+
+            /*
+             * Inheritance :-
+             *      - one of pillar of OOP
+             *      - avoid code duplication
+             *      
+             *      
+             * C# support 3 Categories of inheritance
+             *      1. Single Inheritance
+             *          - Class inherits from one base class
+             *      2. mulitLevel inheritance
+             *          - Class inherits from one base class and that base class inherits from another base class
+             *      3. Hierarchical Inheritance
+             *          - multiple classes inherit from only one base class
+             *          
+             *          
+             *      * C# does not Allow multiple inheritance
+             */
+
+            //Parent p1 = new Parent( 10 , 20 );
+            //Console.WriteLine(p1);
+
+            
+            //Console.WriteLine(p1.Multiply());
+            //p1.MyFunc();
+            //Console.WriteLine("=============");
+
+            //Child c1 = new Child( 1 , 2 , 3 );
+            //Console.WriteLine(c1);
+            //Console.WriteLine(c1.Multiply());
+            //c1.MyFunc();
+            #endregion
+
+
         }
     }
 }

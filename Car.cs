@@ -35,7 +35,7 @@
 //            Console.WriteLine("1st CTOR");
 //        }
 //        // CTOR overloading
-//        public Car(int Id, string? Model):this(Id , Model , 350)
+//        public Car(int Id, string? Model) : this(Id, Model, 350)
 //        {
 //            //id = Id;
 //            //model = Model;
@@ -43,7 +43,7 @@
 
 //        }
 //        // CTOR Chaining
-//        public Car(int Id) : this(Id, "Audi" ,200)
+//        public Car(int Id) : this(Id, "Audi", 200)
 //        {
 //            Console.WriteLine("3rd CTOR");
 //        }
@@ -52,7 +52,7 @@
 //        #region methods
 //        public override string ToString()
 //        {
-//                return $"Car Id: {id}, Model: {model}, Speed: {speed} km/h";
+//            return $"Car Id: {id}, Model: {model}, Speed: {speed} km/h";
 //        }
 //        #endregion
 //    }
