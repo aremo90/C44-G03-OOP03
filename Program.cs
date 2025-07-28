@@ -5,47 +5,64 @@
         static void Main(string[] args)
         {
             #region Q1 
-            Employee emp = new Employee();
+            //Employee emp = new Employee();
 
-            emp.ID = 1;
+            //emp.ID = 1;
 
-            Console.Write("enter Employee Name:");
-            emp.Name = Console.ReadLine();
+            //Console.Write("enter Employee Name:");
+            //emp.Name = Console.ReadLine();
 
-            Gender genderInput;
-            while (true)
-            {
-                Console.Write("Enter Employee Gender (M/F): ");
-                string input = Console.ReadLine().ToUpper();
+            //Gender genderInput;
+            //while (true)
+            //{
+            //    Console.Write("Enter Employee Gender (M/F): ");
+            //    string input = Console.ReadLine().ToUpper();
 
-                if (input == "M")
-                {
-                    genderInput = Gender.Male;
-                    break;
-                }
-                else if (input == "F")
-                {
-                    genderInput = Gender.Female;
-                    break;
-                }
-                else
-                {
-                    Console.WriteLine("Invalid input. Please enter 'M' or 'F'.");
-                }
-            }
+            //    if (input == "M")
+            //    {
+            //        genderInput = Gender.Male;
+            //        break;
+            //    }
+            //    else if (input == "F")
+            //    {
+            //        genderInput = Gender.Female;
+            //        break;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Invalid input. Please enter 'M' or 'F'.");
+            //    }
+            //}
 
-            emp.Gender = genderInput;
-            Console.Write("Enter Employee Salary: ");
-            emp.Salary = double.Parse(Console.ReadLine());
+            //emp.Gender = genderInput;
+            //Console.Write("Enter Employee Salary: ");
+            //emp.Salary = double.Parse(Console.ReadLine());
 
-            Console.Write("Enter Employee Hire Date (any format): ");
-            emp.HireDate = Console.ReadLine();
+            //Console.Write("Enter Employee Hire Date (any format): ");
+            //emp.HireDate = Console.ReadLine();
 
-            emp.Security = SecurityLevel.Developer;
+            //emp.Security = SecurityLevel.Developer;
 
 
-            Console.WriteLine("\nEmployee Information:\n");
-            Console.WriteLine(emp);
+            //Console.WriteLine("\nEmployee Information:\n");
+            //Console.WriteLine(emp);
+
+            #endregion
+
+            #region Q2
+            Console.Write("Enter Day: ");
+            int day = int.Parse(Console.ReadLine());
+
+            Console.Write("Enter Month: ");
+            int month = int.Parse(Console.ReadLine());
+
+            Console.Write("Enter Year: ");
+            int year = int.Parse(Console.ReadLine());
+
+            HireDate hiringDate = new HireDate(day, month, year);
+
+            Console.WriteLine("Hiring Date: " + hiringDate);
+
 
             #endregion
         }
