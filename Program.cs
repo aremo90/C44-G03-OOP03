@@ -1,4 +1,6 @@
-﻿using Helper;
+﻿using HelperV2;
+
+
 namespace Demo
 {
     internal class Program
@@ -78,7 +80,15 @@ namespace Demo
 
             #region access modifiers
 
-            TypeA
+            TypeA typeA = new TypeA();
+
+            //typeA.A = 1 // private - not accessible outside the class
+            //typeA.B = 2; // internal - accessible within the same assembly
+            typeA.C = 3; // public
+
+            //typeA.X = 4; // private protected - accessible within the same class and derived classes in the same assembly
+            //typeA.Y = 5; // protected - accessible within the same class and derived
+            //typeA.Z = 6; // protected internal - accessible within the same assembly or derived classes in other assemblies
             #endregion
 
         }
