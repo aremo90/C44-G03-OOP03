@@ -1,7 +1,9 @@
-﻿namespace Demo
+﻿using Helper;
+namespace Demo
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
 
@@ -63,7 +65,7 @@
             //Parent p1 = new Parent( 10 , 20 );
             //Console.WriteLine(p1);
 
-            
+
             //Console.WriteLine(p1.Multiply());
             //p1.MyFunc();
             //Console.WriteLine("=============");
@@ -74,6 +76,10 @@
             //c1.MyFunc();
             #endregion
 
+            #region access modifiers
+
+            TypeA
+            #endregion
 
         }
     }
